@@ -1,0 +1,48 @@
+select,
+button,
+input[type="button"],
+input[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    width: 82px;
+    height: 32px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+}
+
+select:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: var(--primary-color) !important;
+    outline: 1px solid var(--secondary-color) !important;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+    background-color: var(--secondary-color) !important;
+    outline: 1px solid var(--primary-color) !important;
+}
+
+button p {
+    margin-left: 4px;
+}
+
+#chat-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    padding-left: 8px;
+    background-color: var(--accent-color);
+}

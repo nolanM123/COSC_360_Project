@@ -1,0 +1,47 @@
+main,
+aside {
+    overflow-y: auto;
+    height: 100%;
+    float: left;
+}
+
+main {
+    width: 100%;
+}
+
+aside {
+    display: none;
+    width: 30%;
+}
+
+aside .container {
+    margin-left: 0;
+    min-height: calc(100% - 16px);
+}
+
+.selected {
+    background-color: var(--accent-color);
+}
+
+.highlighted {
+    box-shadow: 0 0 2px 2px var(--accent-color);
+    outline: 1px solid var(--accent-color);
+}
+
+@media only screen and (min-width: 960px) {
+    main {
+        width: 70%;
+    }
+
+    main .user-entry {
+        display: none;
+    }
+
+    aside {
+        display: block;
+    }
+
+    #chat-btn {
+        display: none;
+    }
+}

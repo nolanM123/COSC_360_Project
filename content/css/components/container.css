@@ -1,0 +1,83 @@
+.container {
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    background-color: var(--primary-color);
+}
+
+.container .container {
+    margin: 8px 0;
+    padding: 0;
+}
+
+.container .container .user-comment {
+    border-left: 1px solid var(--secondary-color);
+    border-radius: 0;
+    padding-left: 8px;
+}
+
+.container .user-info:not(main > header > .user-info) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 8px;
+}
+
+.container > .user-info button {
+    overflow: hidden;
+    width: 32px;
+}
+
+.container > .user-info button img {
+    max-width: 32px;
+    aspect-ratio: 1;
+}
+
+.container > .user-info button:hover img {
+    filter: brightness(60%);
+}
+
+.container > .user-info button:active img {
+    filter: brightness(100%);
+}
+
+
+.container > .user-info button ~ p {
+    margin-left: 8px;
+    font-size: small;
+}
+
+.container > .container-content input[type="text"] {
+    margin-bottom: 8px;
+}
+
+.container-buttons button {
+    margin: 0 2px;
+}
+
+.container-buttons button span {
+    margin-left: 4px;
+}
+
+.container-controls .delete-button {
+    width: 32px;
+}
+
+.container-buttons,
+.container-actions,
+.container-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container hr {
+    margin: 8px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 100px;
+}
+
+.container > .user-reply,
+.container > .container-comments {
+    display: none;
+}

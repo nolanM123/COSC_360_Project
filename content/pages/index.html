@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>home</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/variables.css">
+
+    <link rel="stylesheet" href="../css/components/button.css">
+    <link rel="stylesheet" href="../css/components/container.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/input.css">
+    <link rel="stylesheet" href="../css/components/popup.css">
+    <link rel="stylesheet" href="../css/components/scrollbar.css">
+
+    <link rel="stylesheet" href="../css/pages/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../javascript/modules/cookies.js"></script>
+
+    <script type="module" src="../javascript/comments.js"></script>
+    <script type="module" src="../javascript/index.js"></script>
+    <script type="module" src="../javascript/content.js"></script>
+    <script type="module" src="../javascript/popups.js"></script>
+    <script type="module" src="../javascript/user-entry.js"></script>
+    <script type="module" src="../javascript/user-reply.js"></script>
+
+</head>
+
+<body>
+    <button id="chat-btn">
+        <img src="../images/icons/chat-icon.svg" alt="chat-icon">
+    </button>
+
+    <main>
+        <header class="container">
+            <form action="#" method="get" id="search-form">
+                <input type="hidden" name="timestamp1" value="invalid">
+                <input type="hidden" name="timestamp2" value="invalid">
+                <input type="hidden" name="terms" value="">
+                <input type="hidden" name="type" value="posts">
+
+                <input type="text" name="search-terms" placeholder="search here" autocomplete="off">
+                <select name="search-type">
+                    <option value="users">users</option>
+                    <option value="posts">posts</option>
+                    <option value="comments">comments</option>
+                </select>
+            </form>
+
+            <div class="vr"></div>
+
+            <div class="user-info">
+                <button>
+                    <img src="../images/icons/profile-icon.svg" alt="user-icon" onerror="this.src = '../images/icons/profile-icon.svg';">
+                </button>
+            </div>
+        </header>
+    </main>
+    <aside></aside>
+</body>
+
+</html>

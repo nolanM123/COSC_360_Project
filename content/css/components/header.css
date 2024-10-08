@@ -1,0 +1,40 @@
+main > header {
+    position: sticky;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main header .vr {
+    margin: 0 4px;
+    border: 100px;
+    width: 2px;
+    height: 32px;
+    background-color: var(--secondary-color);
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#search-form input[name="search-terms"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: center;
+}
+
+#search-form select[name="search-type"] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    appearance: none;
+}
+
+#search-form input[name="input-terms"]:focus,
+#search-form select[name="select-type"]:focus {
+    outline: 1px solid var(--accent-color);
+}

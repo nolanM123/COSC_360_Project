@@ -1,0 +1,62 @@
+<template>
+    <article class="container user-post">
+        <header class="user-info">
+            <button>
+                <img src="../images/icons/profile-icon.svg" alt="user-icon">
+            </button>
+            <p class="username">@username</p>
+        </header>
+        <div class="container-content">
+            <input type="hidden" name="userid" value="">
+            <input type="hidden" name="contentid" value="">
+            <input type="text" name="head" placeholder="head" autocomplete="off" disabled>
+            <textarea name="body" rows="6" placeholder="enter" disabled></textarea>
+        </div>
+        <div class="container-buttons">
+            <div class="container-actions">
+                <button class="like-button">
+                    <img src="../images/icons/heart-icon.svg" alt="like-icon">
+                    <span class="like-count">count</span>
+                </button>
+                <button class="comment-button">
+                    <img src="../images/icons/comment-icon.svg" alt="comment-icon">
+                    <span class="comment-count">count</span>
+                </button>
+                <button class="share-button">
+                    <img src="../images/icons/share-icon.svg" alt="share-icon">
+                    <span class="share-count">count</span>
+                </button>
+            </div>
+            <div class="container-controls">
+                <button class="edit-button">
+                    <span>edit</span>
+                </button>
+                <button class="delete-button">
+                    <img src="../images/icons/trash-icon.svg" alt="trash-icon">
+                </button>
+            </div>
+        </div>
+        <article class="container user-reply">
+            <hr>
+            <div class="user-info">
+                <button>
+                    <img src="../images/icons/profile-icon.svg" alt="user-icon" onerror="this.src = '../images/icons/profile-icon.svg';">
+                </button>
+                <p class="username">@username</p>
+            </div>
+            <form action="#" method="post" class="container-content">
+                <input type="hidden" name="parentid" value="">
+                <textarea name="body" rows="6" placeholder="reply..."></textarea>
+                <input type="submit" value="reply">
+            </form>
+        </article>
+        <section class="container container-comments">
+            <footer class="container-content">
+                <input type="hidden" name="parentid" value="">
+                <input type="hidden" name="timestamp1" value="invalid">
+                <input type="hidden" name="timestamp2" value="invalid">
+                <input type="button" name="load" value="more">
+            </footer>
+        </section>
+    </article>
+</template>
